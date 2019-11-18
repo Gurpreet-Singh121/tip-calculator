@@ -1,0 +1,273 @@
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #2dbc9b;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header {
+    margin: 30px 0;
+}
+
+input, input:hover, input:focus, input:active {
+    outline: none;
+    display: block;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type=number], .tipValue .valueItself {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 15px 30px;
+    font-size: 2.4em;
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+    border-radius: 0;
+}
+
+input[type=number]::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+label, .coolLabel {
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #2dbc9b;
+    padding: 6px;
+}
+
+.coolLabel {
+    cursor: default;
+}
+
+section.separate {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.6em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 40px;
+}
+
+.inputHolder {
+    position: relative;
+    overflow: hidden;
+}
+
+.inputHolder span {
+    position: absolute;
+    top: 50%;
+    font-size: 2.4em;
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
+    border-bottom: 2px solid white;
+}
+
+.row .column {
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: .4s background-color ease;
+}
+
+.row .column:active {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.row .lastCol {
+    border-right: none;
+}
+
+.row .firstCol {
+    border-left: none;
+}
+
+.row .selected {
+    background-color: white;
+    color: #2dbc9b;
+    font-weight: bold;
+}
+
+.otherValue {
+    display: none;
+}
+
+.activeOther {
+    display: block;
+}
+
+.otherValue .row>div {
+    padding: 20px 0;
+}
+
+.otherValue .row .range {
+    flex: 4;
+    border-right: 2px solid white;
+    position: relative;
+    margin-right: -2px;
+}
+
+.otherValue .row .range input {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 5px 0;
+    -moz-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type='range']::-moz-focus-outer {
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: 2px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2dbc9b;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 0px;
+    outline: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: 2px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2dbc9b;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #f2f2f2;
+    border-radius: 0px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+input[type=range]::-ms-thumb {
+    border: 2px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #2dbc9b;
+    cursor: pointer;
+    height: 10px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+}
+
+.otherValue .row .value {
+    flex: 1;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+    color: #2dbc9b;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+.tipValue {
+    position: relative;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: .7s all ease;
+}
+
+section.true>.tipValue {
+    transform: translateY(0);
+}
+
+#validValue {
+    margin-top: -20px;
+    transition: .5s all ease;
+}
+
+.true {
+    transform: translateY(20px);
+}

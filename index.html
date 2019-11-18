@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+    Created by Jesus Mejias
+    https://jesusmejias.github.io
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="preload">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <main>
+            <section class="separate">
+                <div class="coolLabel">Percentage</div>
+                <div class="row" id="percentage" data-current="17">
+                    <div class="column firstCol" id="percent17">17%</div>
+                    <div class="column" id="percent18">18%</div>
+                    <div class="column" id="percent19">19%</div>
+                    <div class="column" id="percent20">20%</div>
+                    <div class="column lastCol" id="percentOther">Other</div>
+                </div>
+                <div class="otherValue">
+                    <div class="row">
+                        <div class="range"><input type="range" id="rangeValue" min="0" max="100" value="21" step="1" /></div>
+                        <div class="value" id="rangeActualValue">21%</div>
+                    </div>
+                </div>
+            </section>
+            <section class="separate">
+                <label for="originalAmount">Enter Original Amount</label>
+                <div class="inputHolder"><input type="number" inputmode="decimal" id="originalAmount" placeholder="0.00" /><span>$</span>
+                </div>
+            </section>
+            <section id="validValue">
+                <div class="tipValue">
+                    <section class="separate">
+                        <div class="coolLabel">Tip</div>
+                        <div class="inputHolder">
+                            <div id="tipInside" class="valueItself"></div><span>$</span>
+                        </div>
+                    </section>
+                    <section class="separate">
+                        <div class="coolLabel">Total</div>
+                        <div class="inputHolder">
+                            <div id="totalAmount" class="valueItself"></div><span>$</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
