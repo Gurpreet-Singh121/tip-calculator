@@ -2,11 +2,11 @@
 
 ![Preview](https://user-images.githubusercontent.com/42305901/69274646-ca9e3a80-0ba8-11ea-8d8c-67e424e2958c.png)
 
-# What is It?
+## What is It?
 
 It's a mobile web app to calculate tips easily. You can choose from a variety of tipping percantages (eg. 17&, 18%), or you can even choose your own tipping percetange.
 
-# How to Install on a Mobile Device
+## How to Install on a Mobile Device
 
 After you've uploaded Tip Calculator to your hosting of preference and it's live, you can install the mobile app on your device by following these instructions:
 
