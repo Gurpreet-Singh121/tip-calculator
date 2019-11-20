@@ -4,7 +4,7 @@
 
 ## What is It?
 
-It's a mobile web app to calculate tips easily. You can choose from a variety of tipping percantages (eg. 17&, 18%), or you can even choose your own tipping percetange.
+It's a mobile web app to calculate tips easily. You can choose from a variety of tipping percantages (eg. 17%, 18%, etc), or you can even choose your own tipping percetange.
 
 ## How to Install on a Mobile Device
 
