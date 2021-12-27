@@ -15,4 +15,4 @@ Step 1 | Step 2 | Step 3
 Tap on the Share button | Tap on "Add to Home Screen" | Tap on "Add"
 ![Step one](https://user-images.githubusercontent.com/42305901/69274717-f7eae880-0ba8-11ea-9681-1a0df3bb192d.jpg) | ![Step two](https://user-images.githubusercontent.com/42305901/69274724-fb7e6f80-0ba8-11ea-94d0-3d7a7fe52ab8.jpg) | ![Step 3](https://user-images.githubusercontent.com/42305901/69274727-fd483300-0ba8-11ea-9516-a4e9d378503b.jpg)
 
-[Live Demo](https://jesusmejias.com/projects/tip-calculator)
+[Live Demo](https://tipcalculator.jesusmejias.com)
